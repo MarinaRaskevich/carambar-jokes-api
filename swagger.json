@@ -1,0 +1,72 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Carambar Jokes API",
+    "version": "1.0.0",
+    "description": "API for managing Carambar jokes"
+  },
+  "paths": {
+    "/api/jokes": {
+      "post": {
+        "summary": "Add a new joke",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "content": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Joke added successfully"
+          }
+        }
+      },
+      "get": {
+        "summary": "Get all jokes",
+        "responses": {
+          "200": {
+            "description": "List of jokes"
+          }
+        }
+      }
+    },
+    "/api/jokes/{id}": {
+      "get": {
+        "summary": "Get a joke by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Joke details"
+          }
+        }
+      }
+    },
+    "/api/jokes/random": {
+      "get": {
+        "summary": "Get a random joke",
+        "responses": {
+          "200": {
+            "description": "Random joke"
+          }
+        }
+      }
+    }
+  }
+}
