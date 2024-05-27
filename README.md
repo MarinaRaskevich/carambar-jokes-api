@@ -11,7 +11,7 @@ API pour gérer les blagues Carambar.
 
 ## Déploiement
 - API déployée sur Render.com : [Lien vers l'API](https://carambar-jokes.onrender.com)
-- Documentation Swagger : [Lien vers Swagger](https://votre-api.render.com/api-docs)
+- Documentation Swagger : 
 
 ## Frontend
 - Déployé via GitHub Pages : [Lien vers le frontend](https://marinaraskevich.github.io/carambar-jokes-api/public/index.html)
